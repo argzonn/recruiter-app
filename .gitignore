@@ -1,9 +1,29 @@
 HELP.md
+
+### Gradle ###
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+
+### Logs ###
+*.log
+logs/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### Spring Boot local configs ###
+*.env
+application-local.yaml
+application-local.properties
 
 ### STS ###
 .apt_generated
@@ -17,15 +37,6 @@ bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
@@ -35,3 +46,7 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### OS-specific ###
+.DS_Store
+Thumbs.db
